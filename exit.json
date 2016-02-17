@@ -6,30 +6,35 @@
       "type": "string",
       "defaultValue": "azureblob01"
     },
-    "myvnet": {
+    "storageaccounttype": {
       "type": "string",
-      "defaultValue": "knvnet07"
-    },
-    "addressprefix": {
-      "type": "string",
-      "defaultValue": "10.0.0.0/16"
-    },
-    "subnetprefix": {
-      "type": "string",
-      "defaultValue": "10.0.0.0/24"
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_GRS"
+      ]
     },
     "location": {
       "type": "string",
-      "defaultValue": "10.0.0.0/24"
+      "defaultValue": "west europe"
     },
     "vnetname": {
       "type": "string",
-      "defaultValue": "10.0.0.0/24"
+      "defaultValue": "knvnet01"
     },
     "subnetname": {
       "type": "string",
-      "defaultValue": "10.0.0.0/24"
+      "defaultvalue": "knsubnet01"
+    },
+    "addressprefix": {
+      "type": "string",
+      "defaultValue": "192.168.0.0/16"
+    },
+    "subnetprefix": {
+      "type": "string",
+      "defaultValue": "192.168.0.0/24"
     }
+
   },
   "resources": [
     {
@@ -43,3 +48,4 @@
     }
   ]
 }
+
