@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+  },
+  "variables": {
+    "storageblobname": {
+      "type": "string",
+      "defaultValue": "azureblob01"
+    },
+    "myvnet": {
+      "type": "string",
+      "defaultValue": "knvnet07"
+    },
+    "addressprefix": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/16"
+    },
+    "subnetprefix": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/24"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/24"
+    },
+    "vnetname": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/24"
+    },
+    "subnetname": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/24"
+    }
+
+  }
+}
